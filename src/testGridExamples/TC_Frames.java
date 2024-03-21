@@ -1,7 +1,7 @@
 package testGridExamples;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;    //To Access Browser
-import org.openqa.selenium.By;
 
 
 public class TC_Frames {

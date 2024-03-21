@@ -2,9 +2,6 @@ package testGridExamples;       //Package name should be anything
 //Pre-def:
 import org.openqa.selenium.WebDriver;           //To Access WebDriver Methods & Classes    
 import org.openqa.selenium.chrome.ChromeDriver; //To Access Browser
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.By;                    //To Access Object Identification/Elements locator:Methods
 
 public class TC001_Login_Logout {
 

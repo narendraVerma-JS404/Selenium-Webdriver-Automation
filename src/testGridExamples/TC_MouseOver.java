@@ -1,9 +1,9 @@
 package testGridExamples;
+import org.openqa.selenium.By;     //TO access object/elements methods
 //To access WebDriver methods & classes
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;    //To Access Browser
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.By;     //TO access object/elements methods
 public class TC_MouseOver {
 	//--Test Data
 	     //DT     VAR        VV

@@ -1,8 +1,8 @@
 package testGridExamples;
+import org.openqa.selenium.By;     //To access object identification/element locator:methods
 //Pre-Def
 import org.openqa.selenium.WebDriver;   //To access WebDriver methods & classes
 import org.openqa.selenium.chrome.ChromeDriver;    //to access browser
-import org.openqa.selenium.By;     //To access object identification/element locator:methods
 
 public class TC001_Firefox {
 	public static void main(String args[]) throws Exception{

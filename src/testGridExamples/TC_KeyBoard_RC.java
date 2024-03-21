@@ -1,10 +1,10 @@
 package testGridExamples;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TC_KeyBoard_RC {
 public static void main(String args[]) throws Exception{
