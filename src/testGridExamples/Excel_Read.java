@@ -2,9 +2,7 @@ package testGridExamples;
 
 import java.io.FileInputStream;
 
-
 import jxl.Sheet;
-
 import jxl.Workbook;
 
 public class Excel_Read {

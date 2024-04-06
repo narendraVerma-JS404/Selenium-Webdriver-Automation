@@ -8,11 +8,14 @@ public class Auto_IT {
 	public static void main(String[] args) throws Exception {
 	
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://upload.photobox.com/en/#computer");
-		driver.findElement(By.xpath("//button[@id='button_desktop']")).click();
+		driver.get("https://imgbb.com/");
+		Thread.sleep(5000);
+        driver.findElement(By.xpath("//*[@id=\"home-cover-content\"]/div[2]/a")).click();
 		
 		Runtime.getRuntime().exec("D:\\FileuploadScript.exe");
-		Thread.sleep(3000);
+		
+		Thread.sleep(10000);
+		driver.close();
 	}
 
 }

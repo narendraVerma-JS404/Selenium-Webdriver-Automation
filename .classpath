@@ -74,5 +74,8 @@
 	<classpathentry kind="lib" path="E:/jarfile-selenium/poi-ooxml-3.10-FINAL.jar"/>
 	<classpathentry kind="lib" path="E:/jarfile-selenium/poi-ooxml-schemas-3.10-FINAL.jar"/>
 	<classpathentry kind="lib" path="E:/jarfile-selenium/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="E:/jarfile-selenium/sikulixapi-2.0.5-win.jar"/>
+	<classpathentry kind="lib" path="E:/jarfile-selenium/ojdbc8-19.3.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dharmendra Verma/Downloads/mysql-connector-j-8.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

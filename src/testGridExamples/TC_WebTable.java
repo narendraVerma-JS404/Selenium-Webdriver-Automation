@@ -11,6 +11,7 @@ public class TC_WebTable {
 		 WebDriver driver = new ChromeDriver();
 		 driver.get("C:\\Users\\Dharmendra Verma\\Downloads\\WebTable.html");
 		 //count
+		 
 		 int row = driver.findElements(By.xpath("//*[@id='idCourse']/tbody/tr")).size();
 		 int col = driver.findElements(By.xpath("//*[@id='idCourse']/tbody/tr[1]/td")).size();
 		 int row_col = driver.findElements(By.xpath("//*[@id='idCourse']/tbody/tr/td")).size();
@@ -18,8 +19,10 @@ public class TC_WebTable {
 		 System.out.println("Col Count" + col);
 		 System.out.println("Row_col Count" + row_col);
 		 // Data -- Cell
+		 
 		 String celldata = driver.findElement(By.xpath("//*[@id='idCourse']/tbody/tr[2]/td[2]")).getText();
 		 System.out.println(celldata);
+		 
 		 // Data -- Table
 		 // DT Var VV
 		 for(int i= 1; i<=row; i++) {
