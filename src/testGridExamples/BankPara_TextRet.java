@@ -26,7 +26,7 @@ public class BankPara_TextRet {
 		 driver.findElement(By.xpath("//input[@value='Send Payment']")).click();
 		 System.out.println("Error messages should be displayed");
 		 
-		 //getText message retrive
+		 //getText message retrieve
 		 
 		 String Str = driver.findElement(By.xpath("//*[@id=\"rightPanel\"]/div/div[1]/form/table/tbody/tr[1]/td[3]/span")).getText();
 		 System.out.println(Str);

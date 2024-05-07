@@ -20,7 +20,9 @@ driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 Thread.sleep(4000);
 driver.navigate().to("https://www.youtube.com/watch?v=NO2R_vOPrYo");
 Thread.sleep(20000);
+
 driver.close();
+
 }
 
 }

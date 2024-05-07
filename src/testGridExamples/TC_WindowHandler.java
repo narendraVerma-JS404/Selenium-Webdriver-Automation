@@ -27,13 +27,13 @@ driver.findElement(By.xpath("/html/body/app-root/tourpkgs/div[2]/div[2]/ul/li[1]
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
 System.out.println("Fly in The SKY");
 
-ArrayList<String>mulwind = new ArrayList<>(driver.getWindowHandles());
+ArrayList<String>mulwind = new ArrayList<>(driver.getWindowHandles());//it will retrive multiple windows information
 
     //Switch to First Window
 driver.switchTo().window(mulwind.get(0));
 Thread.sleep(3500);
-//driver.close();
-driver.quit();
+//driver.close();  //to close active windows
+driver.quit(); //to close all browser 
 }
 
 }

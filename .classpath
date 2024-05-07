@@ -69,7 +69,6 @@
 	<classpathentry kind="lib" path="E:/jarfile-selenium/testng-6.8.jar"/>
 	<classpathentry kind="lib" path="E:/jarfile-selenium/commons-io-2.2.jar"/>
 	<classpathentry kind="lib" path="E:/jarfile-selenium/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="E:/jarfile-selenium/jxl-2.6.9.jar"/>
 	<classpathentry kind="lib" path="E:/jarfile-selenium/poi-3.10-FINAL.jar"/>
 	<classpathentry kind="lib" path="E:/jarfile-selenium/poi-ooxml-3.10-FINAL.jar"/>
 	<classpathentry kind="lib" path="E:/jarfile-selenium/poi-ooxml-schemas-3.10-FINAL.jar"/>
@@ -77,5 +76,6 @@
 	<classpathentry kind="lib" path="E:/jarfile-selenium/sikulixapi-2.0.5-win.jar"/>
 	<classpathentry kind="lib" path="E:/jarfile-selenium/ojdbc8-19.3.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Dharmendra Verma/Downloads/mysql-connector-j-8.3.0.jar"/>
+	<classpathentry kind="lib" path="E:/jarfile-selenium/jxl-2.6.9.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

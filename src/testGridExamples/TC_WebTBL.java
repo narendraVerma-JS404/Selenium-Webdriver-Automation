@@ -18,12 +18,16 @@ public static void main (String args[]) throws Exception{
 	 // Data -- Cell
 	 String celldata = driver.findElement(By.xpath("//*[@id='idCourse']/tbody/tr[2]/td[2]")).getText();
 	 System.out.println(celldata);
+	 System.out.println("Row 2====> Data Showing(Table data===> C++");
+	 System.out.println("<=====================================>");
 	 // Data -- Table
 	 // DT Var VV
 	 for(int i= 1; i<=row; i++) {
 	 String data=driver.findElement(By.
 	        xpath("//*[@id='idCourse']/tbody/tr["+i+"]")).getText();
 	 System.out.println(data);
+	 System.out.println("Complete Table Data Show");
+	 System.out.println("<*********************************>");
 	 Thread.sleep(3000);
 	 }
 

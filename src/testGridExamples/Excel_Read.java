@@ -12,7 +12,8 @@ public class Excel_Read {
 		Sheet st = wb.getSheet(0);
 		
 		
-		int row=3;   //Row 
+		int row=1;   //Row 
+		
 		String empid = st.getCell(0,row).getContents();
 		String name = st.getCell(1,row).getContents();
 		String email = st.getCell(2,row).getContents();
