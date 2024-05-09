@@ -12,7 +12,9 @@ public class ClassGetTitle {
         driver.manage().window().maximize();
 		driver.navigate().to("https://mdbootstrap.com/docs/standard/data/datatables/");
 		
-		
+		abc
+			1234
+			narendra
 		Thread.sleep(3500);
 		
 		//Verify Title
