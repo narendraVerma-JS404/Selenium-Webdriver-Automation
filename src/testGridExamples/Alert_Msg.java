@@ -18,7 +18,7 @@ public class Alert_Msg {
 		         
 		         //Alert method using
 		
-		Demo.repository
+		//Demo.repository
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("//input[@name='cusid']")).sendKeys("Narendra");
 		Thread.sleep(3500);

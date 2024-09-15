@@ -15,7 +15,8 @@ public class ClassVerifyTitle {
 		System.out.println("Application Opened");
 		//Verify Title
 		// Actual Result compare expected result
-		if(driver.getTitle().equals("ParaBank | Welcome | Online Bankin")) {//ParaBank | Welcome | Online Banking
+		if(driver.getTitle().equals("ParaBank | Welcome | Online Bankin")) {
+			                       //ParaBank | Welcome | Online Banking
 		System.out.println("Title matched");    
 		}
 		else {

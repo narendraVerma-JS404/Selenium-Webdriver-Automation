@@ -24,12 +24,14 @@ public class PaginationWebTbl {
 		driver.findElement(By.name("username")).sendKeys("demo");
 		driver.findElement(By.name("password")).sendKeys("demo");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		Thread.sleep(3000);
+		//driver.findElement(By.cssSelector("https://demo.opencart.com/admin/")).click();
 		
 		
 		Screen sc = new Screen();
 		Thread.sleep(2000);
 		sc.click("D:\\Opencart.PNG");
-	
+
 		
 		driver.findElement(By.xpath("//a[normalize-space()='Sales']")).click();
 		driver.findElement(By.xpath("//a[normalize-space()='Orders']")).click();
@@ -45,49 +47,49 @@ public class PaginationWebTbl {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,600)", "");
 		
-	                                                     //Starting index()         End Index()
+	     
+		//WebElement activepages=driver.findElement(By.xpath("//*[@id=\"form-order\"]/div[1]/table/tbody"));
+		//System.out.println(activepages.getText());
+		
+				//Starting index()         End Index()
 		int total_pages = Integer.valueOf(text.substring(text.indexOf("(") + 1, text.indexOf("Pages") - 1)); // Corrected substring indices
         System.out.println("Total Number of Pages: " + total_pages);//41 pages
+        
+        Thread.sleep(3500);
        
-        //(3) Find how many rows exists in each pages
+       // (3) Find how many rows exists in each pages
         for(int p=1; p<=5; p++)
-        {
-        	WebElement activePage = driver.findElement(By.xpath("//ul[@class='pagination']//li//span"));//span[normalize-space()='1']  Active page
-        	System.out.println("Active page: "+activePage.getText());
+        {                                             //Everytime it will be pointing the active page.
+        	WebElement activePage = driver.findElement(By.xpath("//ul[@class='pagination']//li//span")); //span[normalize-space()='1'] This xpath match all kind of Active page
+        	System.out.println("Active page: "+activePage.getText());//1
+        	
+        	
+        	int rows = driver.findElements(By.xpath("//table[@class='table table-bordered table-hover']//tbody/tr")).size();//Rows No.
+        	System.out.println("Number of rows : "+rows);
+            Thread.sleep(3500);
+		
+				Thread.sleep(3000);
+			System.out.println("<=================================================>");
+			
+			{
+          
+      	//(4)next page
+        	
+        	Thread.sleep(3500);
+        	driver.findElement(By.xpath("//*[@id=\"form-order\"]/div[2]/div[1]/ul/li[12]/a"));
         	activePage.click();
         	
-        	int rows = driver.findElements(By.xpath("//table[@class='table table-bordered table-hover']//tbody/tr")).size();
-        	System.out.println("Number of rows : "+rows);
         	
-        	// (4) Read all the rows from each page
-     
-        	for(int r=1;r<=rows; r++)
-        	{
-        	String orderId =driver.findElement(By.xpath("//table[@class='table table-bordered table-hover']//tbody//tr["+r+"]//td[2]")).getText();
-        	String customerName =driver.findElement(By.xpath("//table[@class='table table-bordered table-hover']//tbody//tr["+r+"]//td[3]")).getText();
-        	String status =driver.findElement(By.xpath("//table[@class='table table-bordered table-hover']//tbody//tr["+r+"]//td[4]")).getText();
         	
-        	if(status.equals("Pending"))
-        	{
-        	System.out.println(orderId+"         "+customerName+"         "+status);
         	}
-        	
-        	
-        	 // Go to next page
-            if (p < total_pages) {
-                String nextPage = String.valueOf(p + 1);
-                driver.findElement(By.xpath("//ul[@class='pagination']//li//a[text()='" + nextPage + "']")).click();
-        	
-        	
-        	//(4)next page
-        	String pageno = Integer.toString(p+1);
-        	driver.findElement(By.xpath("//ul[@class='pagination']//li//a[text()='"+pageno+"']")).click();
-        	//driver.findElement(By.xpath("//ul[@class='pagination']//li//a[text()='2']")).click();
-        	}
-        	}
-        }
+        	}  
 	}
 }
+	
+	
+
+
+
         
         
 	
